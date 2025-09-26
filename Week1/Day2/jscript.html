@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2 Task - Unique Version</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    #greeting {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    #about {
+      padding: 15px;
+      background: #f0f0f0;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+    }
+
+    #output {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e8f5e9;
+      border: 2px solid #4caf50;
+      border-radius: 5px;
+    }
+
+    input {
+      padding: 7px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 7px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #1d3557;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #457b9d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Greeting -->
+  <div id="greeting"></div>
+
+  <!-- Section with toggle button -->
+  <button onclick="toggleSection()">Hide/Show Section</button>
+  <div id="about">
+    <h2>About Section</h2>
+    <p>This section can be hidden or shown with a smooth fade effect using JavaScript.</p>
+  </div>
+
+  <!-- Form -->
+  <h2>Form</h2>
+  <form id="myForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" required placeholder="Enter your full name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required placeholder="Enter your email"><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Output -->
+  <div id="output"></div>
+
+  <script>
+    // Greeting based on time with color
+    const hour = new Date().getHours();
+    const greetingDiv = document.getElementById("greeting");
+    let greetingText = "";
+    if (hour < 12) {
+      greetingText = "Good Morning.....";
+      greetingDiv.style.color = "orange";
+    } else if (hour < 18) {
+      greetingText = "Good Afternoon.....";
+      greetingDiv.style.color = "green";
+    } else {
+      greetingText = "Good Evening.....";
+      greetingDiv.style.color = "blue";
+    }
+    greetingDiv.innerText = greetingText;
+
+    // Hide/Show section with fade effect
+    function toggleSection() {
+      const about = document.getElementById("about");
+      if (about.style.display === "none" || about.style.display === "") {
+        about.style.display = "block";
+        about.style.opacity = 0;
+        let op = 0;
+        const timer = setInterval(() => {
+          if (op >= 1) clearInterval(timer);
+          about.style.opacity = op;
+          op += 0.1;
+        }, 30);
+      } else {
+        let op = 1;
+        const timer = setInterval(() => {
+          if (op <= 0) {
+            clearInterval(timer);
+            about.style.display = "none";
+          }
+          about.style.opacity = op;
+          op -= 0.1;
+        }, 30);
+      }
+    }
+
+    // Form submit without reload
+    document.getElementById("myForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      if (name === "" || email === "") {
+        alert("Please fill all fields correctly.");
+        return;
+      }
+
+      document.getElementById("output").innerHTML = 
+        `<h3 style="color: ${greetingDiv.style.color}">Submitted Data:</h3>` +
+        `<p><strong>Name:</strong> ${name}</p>` +
+        `<p><strong>Email:</strong> ${email}</p>`;
+    });
+  </script>
+
+</body>
+</html>
