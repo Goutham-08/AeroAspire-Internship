@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# My React MUI App — Today’s Work
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What I Did Today
 
-## Available Scripts
+Today, I created a new React app and set it up with Material UI (MUI) to build a simple homepage.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Steps I Followed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Created the React app using:
+2. Installed Material UI packages to use ready-made UI components:
+3. Made a Header component with MUI’s AppBar and Typography for the top navigation bar.
+4. Made a Home page component using Typography and Box from MUI for content and layout.
+5. Added these components into `App.js` and used CssBaseline for consistent styling.
+6. Ran the app locally using `npm start` and checked everything works fine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Problems I Faced
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- I had an error in PowerShell saying scripts can't run.
+- I fixed it by running this command in PowerShell as admin:
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What I Learned
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- How to set up a React project with Material UI.
+- How to organize folders for components and pages.
+- How to fix common Windows PowerShell errors for running commands.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## What’s Next
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- I want to add routing to go between pages.
+- Build more components for the app.
+- Keep practicing React and Material UI.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## References
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Material UI official docs
+- Some online articles and tutorials
