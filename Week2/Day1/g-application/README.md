@@ -1,4 +1,6 @@
 # My React MUI App — Today’s Work
+![App Screenshot](C:\Users\Admin\Documents\AeroAspire\Week2\Day1\g-application\React App Webpage image reference.png)
+
 
 ## What I Did Today
 
