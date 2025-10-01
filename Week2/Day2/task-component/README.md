@@ -21,7 +21,7 @@ I built a small project called **TaskCard** where each task is displayed as a co
 
 Here’s a screenshot of the output:
 
-![Preview](./screenshot.png)
+![Preview](./src/assets/week2day2ss1.png)
 
 ---
 
