@@ -33,7 +33,7 @@ Here’s a screenshot of the output:
 
 ---
 
-## ▶️ Running the project
+## Running the project
 1. Clone this repo or pull the latest changes.  
 2. Run `npm install` (only if starting fresh).  
 3. Run `npm start` to see the project in action.  
