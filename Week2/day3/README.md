@@ -20,11 +20,11 @@ In this project, I built a simple task manager using React and Material UI.
 
 ## Screenshots
 
-![Screenshot picture1](./images/week2day3ss2.PNG)  
+![Screenshot picture1](./Images/week2day3ss2.PNG)  
 *This screen shows the newest added tasks*
 
-![Screenshot picture2](./images/week2day3ss3.PNG)  
+![Screenshot picture2](./Images/week2day3ss3.PNG)  
 *This screen shows the completed tasks*
 
-![Screenshot picture3](./images/week2day3ss4.PNG)  
+![Screenshot picture3](./Images/week2day3ss4.PNG)  
 *This screen shows the incompleted tasks*
