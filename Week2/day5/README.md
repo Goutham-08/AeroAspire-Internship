@@ -31,13 +31,13 @@ This task was about adding some finishing touches and bonus features to the task
 
 ### Light Theme with Search Bar
 
-![Light Theme](./images/w2d5.PNG)
+![Light Theme](./Images/w2d5.PNG)
 
 ### Dark Theme with Search Bar
 
-![Dark Theme](./images/w2d5a.PNG)
+![Dark Theme](./Images/w2d5a.PNG)
 
 ### Polished Add Task UI
 
-![Polished Add UI](./images/w2d5b.PNG)
+![Polished Add UI](./Images/w2d5b.PNG)
 
