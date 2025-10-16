@@ -1,4 +1,4 @@
-# Internship Journey 🚀
+# Internship Journey 
 
 This repository documents my internship experience, learnings, and projects.  
 It serves as both a personal record and a portfolio of the skills, tools, and practices I developed during this period.
