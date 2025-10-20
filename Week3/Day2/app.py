@@ -2,7 +2,6 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# sample in-memory workout task list
 tasks = [
     {
         "id": 1,
@@ -24,12 +23,10 @@ tasks = [
     }
 ]
 
-# ✅ Root route (just to confirm your server is working)
 @app.route('/')
 def home():
     return "🏋️ Welcome to the Workout Tracker API! Try /tasks to view your workout list."
 
-# ✅ GET all tasks or filter by ?completed=true/false
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     completed_param = request.args.get('completed')
@@ -39,7 +36,6 @@ def get_tasks():
         return jsonify(filtered_tasks)
     return jsonify(tasks)
 
-# ✅ POST new task
 @app.route('/tasks', methods=['POST'])
 def add_task():
     data = request.get_json()
@@ -52,7 +48,6 @@ def add_task():
     tasks.append(new_task)
     return jsonify(new_task), 201
 
-# ✅ PUT update existing task
 @app.route('/tasks/<int:task_id>', methods=['PUT'])
 def update_task(task_id):
     task = next((t for t in tasks if t['id'] == task_id), None)
@@ -65,7 +60,6 @@ def update_task(task_id):
     task['completed'] = data.get('completed', task['completed'])
     return jsonify(task)
 
-# ✅ DELETE a task
 @app.route('/tasks/<int:task_id>', methods=['DELETE'])
 def delete_task(task_id):
     global tasks
