@@ -160,18 +160,20 @@ Copy code
 
 ## **Screenshots**
 
-### *1️⃣ Flask Server Running*
-![Flask Running](./screenshots/flask_running.png)
+### *1 Flask Server Running*
+![Scrennshot](./Images/w4d2a.PNG)
 
-### *2️⃣ Task Added in Postman*
-![Task Added](./screenshots/task_added.png)
+### *2 Task Added in Postman*
+![Scrennshot](./Images/w4d2b.PNG)
 
-### *3️⃣ View All Tasks*
-![View Tasks](./screenshots/view_tasks.png)
+### *3 View All Tasks*
+![Scrennshot](./Images/w4d2c.PNG)
 
-### *4️⃣ Database View in SQLite*
-![Database View](./screenshots/database_view.png)
+### *4 Updated Task*
+![Scrennshot](./Images/w4d2d.PNG)
 
+### *5 Deleted Task*
+![Scrennshot](./Images/w4d2e.PNG)
 ---
 
 ## **Outcome**
