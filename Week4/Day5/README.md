@@ -12,10 +12,12 @@ Handle edge cases such as:
 ## **Steps Followed**
 
 ### **1. Setting up the Backend**
-1. Created a folder named `backend/`.  
+1. Created a folder named `backend/`.
+
 2. Installed the required dependencies:
    ```bash
    pip install flask flask_sqlalchemy flask_cors
+   
 3. Added a file named app.py containing:
 
 Flask and SQLAlchemy configuration
