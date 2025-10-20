@@ -8,7 +8,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-# --- Model ---
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
@@ -16,16 +15,13 @@ class Task(db.Model):
     status = db.Column(db.String(20), default="pending")
     due_date = db.Column(db.String(20))
 
-# --- Create the table ---
 with app.app_context():
     db.create_all()
 
-# --- Default route ---
 @app.route('/')
 def home():
     return jsonify({"message": "Task API with Filtering & Search running ✅"})
 
-# --- Get tasks with filters/search ---
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     status = request.args.get('status')
@@ -56,7 +52,6 @@ def get_tasks():
         "due_date": t.due_date
     } for t in tasks])
 
-# --- Add a task ---
 @app.route('/tasks', methods=['POST'])
 def add_task():
     data = request.get_json()
@@ -70,7 +65,6 @@ def add_task():
     db.session.commit()
     return jsonify({"message": "Task added successfully!"}), 201
 
-# --- Update task ---
 @app.route('/tasks/<int:id>', methods=['PUT'])
 def update_task(id):
     task = Task.query.get_or_404(id)
@@ -84,7 +78,6 @@ def update_task(id):
     db.session.commit()
     return jsonify({"message": "Task updated successfully!"})
 
-# --- Delete task ---
 @app.route('/tasks/<int:id>', methods=['DELETE'])
 def delete_task(id):
     task = Task.query.get_or_404(id)
