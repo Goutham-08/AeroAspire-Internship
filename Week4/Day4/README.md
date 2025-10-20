@@ -112,6 +112,11 @@ URL: http://127.0.0.1:5000/tasks
 ---
 
 ## Screenshots
+![Scrennshot](./Images/w4d4a.PNG)
+![Scrennshot](./Images/w4d4b.PNG)
+![Scrennshot](./Images/w4d4c.PNG)
+![Scrennshot](./Images/w4d4d.PNG)
+
 
 
 
