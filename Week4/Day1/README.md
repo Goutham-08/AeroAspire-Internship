@@ -1,8 +1,10 @@
-Week 5 – Day 1
-Topic: SQL Basics — Tables, Relations, Schema Design
-Task:
+# Week 5 – Day 1
+# Topic: SQL Basics — Tables, Relations, Schema Design
+# Task:
 
-Design schema for tasks: fields such as id, title, description, status, due_date; create tables.
+## Design schema for tasks: fields such as id, title, description, status, due_date; create tables.
+
+---
 
 # Folder Structure
 Week5/
@@ -91,13 +93,13 @@ Visually confirm that the tasks table and all inserted rows exist.
 # Screenshots
 ## 1. Database Table Created
 
-(insert your screenshot here)
-![Database Created](./screenshots/db_created.png)
+
+![Database Created](./Images/w4d1a.PNG)
 
 ## 2. Tasks Added Successfully
 
-(insert your screenshot here)
-![Tasks Added](./screenshots/tasks_added.png)
+
+![Tasks Added](./Images/w4d1b.PNG)
 
 # Outcome
 
